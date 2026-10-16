@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ExpenseDetailActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar.App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationContentDescription="@string/btn_back"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/title_detail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    tools:text="Mua sách" />
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/money_red"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    tools:text="120.000 đ" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/border" />
+
+                <TextView
+                    style="@style/DetailLabel"
+                    android:text="@string/label_category" />
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    style="@style/DetailValue"
+                    tools:text="Học tập" />
+
+                <TextView
+                    style="@style/DetailLabel"
+                    android:text="@string/label_date" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/DetailValue"
+                    tools:text="13/10/2026" />
+
+                <TextView
+                    style="@style/DetailLabel"
+                    android:text="@string/label_note" />
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    style="@style/DetailValue"
+                    tools:text="Sách Lập trình Android" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/btn_back"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/money_red"
+                android:text="@string/btn_delete"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

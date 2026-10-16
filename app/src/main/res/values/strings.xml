@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Quản lý chi tiêu</string>
+
+    <string name="login_subtitle">Đăng nhập để tiếp tục</string>
+    <string name="label_username">Tên đăng nhập</string>
+    <string name="label_password">Mật khẩu</string>
+    <string name="hint_username">Nhập tên đăng nhập</string>
+    <string name="hint_password">Nhập mật khẩu</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="sample_account">Tài khoản mẫu: admin / 123456</string>
+    <string name="error_login_empty">Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu</string>
+    <string name="error_login_wrong">Sai tên đăng nhập hoặc mật khẩu</string>
+
+    <string name="total_label">Tổng số tiền đã chi</string>
+    <string name="list_label">Danh sách khoản chi</string>
+    <string name="list_hint">(nhấn vào một khoản chi để xem chi tiết)</string>
+    <string name="btn_add_expense">+  Thêm khoản chi</string>
+
+    <string name="title_add">Thêm khoản chi</string>
+    <string name="label_name">Tên khoản chi</string>
+    <string name="hint_name">Ví dụ: Ăn trưa</string>
+    <string name="label_amount">Số tiền (VNĐ)</string>
+    <string name="hint_amount">Chỉ nhập số, ví dụ: 45000</string>
+    <string name="label_category">Danh mục</string>
+    <string name="label_date">Ngày chi tiêu</string>
+    <string name="label_note">Ghi chú</string>
+    <string name="hint_note">Nhập ghi chú (nhiều dòng)…</string>
+    <string name="btn_save">Lưu khoản chi</string>
+    <string name="error_name_empty">Tên khoản chi không được để trống</string>
+    <string name="error_amount_invalid">Số tiền phải là số hợp lệ và lớn hơn 0</string>
+
+    <string name="title_detail">Chi tiết khoản chi</string>
+    <string name="btn_back">Quay lại</string>
+    <string name="btn_delete">Xóa khoản chi</string>
+
+    <string-array name="categories">
+        <item>Ăn uống</item>
+        <item>Đi lại</item>
+        <item>Học tập</item>
+        <item>Giải trí</item>
+        <item>Khác</item>
+    </string-array>
+</resources>
